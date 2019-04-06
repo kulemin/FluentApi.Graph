@@ -1,0 +1,8 @@
+digraph CommentParser {
+    START;
+    comment;
+    START -> slash;
+    slash -> comment;
+    comment -> comment;
+    comment -> START
+}
